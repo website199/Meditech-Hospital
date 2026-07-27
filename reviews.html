@@ -1,67 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Patient Reviews | 5.0 ⭐ 287 Google Reviews | Meditech Hospital Patna</title>
-  <meta name="description" content="Read 287+ five-star Google reviews for Meditech Hospital & Sports Injury Centre, Patna. Trusted orthopaedic and dental care." />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://unpkg.com/lucide@latest"></script>
-  <script>tailwind.config={theme:{extend:{colors:{navy:'#0B1F4B',teal:'#0D9488',light:'#F0F7F6',ink:'#1E293B',muted:'#64748B',star:'#F59E0B',emergency:'#DC2626'},fontFamily:{display:['"Playfair Display"','serif'],body:['Inter','sans-serif']}}}}</script>
-  <style>body{font-family:'Inter',sans-serif;color:#1E293B}h1,h2,h3,.display{font-family:'Playfair Display',serif}.label{letter-spacing:.08em}</style>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Patient Reviews | 5.0 ⭐ 287 Google Reviews | Meditech Hospital Patna</title>
+<meta name="description" content="Read 287+ five-star Google reviews for Meditech Hospital & Sports Injury Centre, Patna. Trusted orthopaedic and dental care."/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>tailwind.config={theme:{extend:{colors:{navy:'#0B1F4B',teal:'#0D9488',mint:'#5EEAD4',light:'#F0F7F6',ink:'#0F172A',muted:'#64748B'},fontFamily:{display:['Sora','sans-serif'],body:['Inter','sans-serif']}}}}</script>
+<style>
+:root{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;color:#0F172A;background:#F8FAFC;overflow-x:hidden}
+h1,h2,h3,.display{font-family:'Sora',sans-serif}
+.glass{background:rgba(255,255,255,.7);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,.6)}
+.grad-text{background:linear-gradient(90deg,#0D9488,#0B1F4B);-webkit-background-clip:text;background-clip:text;color:transparent}
+.blob{position:absolute;border-radius:50%;filter:blur(80px);opacity:.5;z-index:0;animation:float 12s ease-in-out infinite}
+@keyframes float{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(30px,-40px) scale(1.1)}}
+.reveal{opacity:0;transform:translateY(40px);transition:all .8s cubic-bezier(.2,.7,.2,1)}
+.reveal.show{opacity:1;transform:none}
+.card{transition:transform .4s cubic-bezier(.2,.7,.2,1),box-shadow .4s}
+.card:hover{transform:translateY(-10px);box-shadow:0 30px 60px -20px rgba(13,148,136,.35)}
+.btn-glow{box-shadow:0 10px 30px -8px rgba(13,148,136,.6);transition:.3s}
+.btn-glow:hover{transform:translateY(-3px);box-shadow:0 18px 40px -8px rgba(13,148,136,.75)}
+.fab{animation:pulse 2.5s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(37,211,102,.6)}70%{box-shadow:0 0 0 18px rgba(37,211,102,0)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}}
+.navlink{position:relative}.navlink::after{content:'';position:absolute;left:0;bottom:-4px;width:0;height:2px;background:#0D9488;transition:.3s}.navlink:hover::after{width:100%}
+</style>
 </head>
-<body class="bg-white">
+<body>
 
-  <header class="sticky top-0 z-50 bg-navy text-white shadow-lg">
-    <div class="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
-      <a href="index.html" class="flex items-center gap-2"><img src="assets/logo.png" alt="Meditech Hospital" class="h-10 w-auto" onerror="this.style.display='none'" /><span class="font-display text-lg font-bold">Meditech Hospital</span></a>
-      <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
-        <a href="index.html" class="hover:text-teal">Home</a><a href="about.html" class="hover:text-teal">About</a><a href="services.html" class="hover:text-teal">Services</a><a href="doctors.html" class="hover:text-teal">Doctors</a><a href="reviews.html" class="text-teal">Reviews</a><a href="contact.html" class="hover:text-teal">Contact</a>
-        <span class="bg-emergency text-xs px-3 py-1 rounded-full label font-semibold">Open 24 Hours</span>
-        <a href="contact.html" class="bg-teal px-4 py-2 rounded-lg font-semibold">Book Appointment</a>
-        <a href="tel:7479894869" class="flex items-center gap-1 border border-white/40 px-3 py-2 rounded-lg"><i data-lucide="phone" class="w-4 h-4"></i>Call</a>
-      </nav>
-      <button id="menuBtn" class="md:hidden"><i data-lucide="menu" class="w-7 h-7"></i></button>
-    </div>
-    <div id="mobileMenu" class="hidden md:hidden bg-navy border-t border-white/10 px-4 pb-4 space-y-2 text-sm">
-      <a href="index.html" class="block py-2">Home</a><a href="about.html" class="block py-2">About</a><a href="services.html" class="block py-2">Services</a><a href="doctors.html" class="block py-2">Doctors</a><a href="reviews.html" class="block py-2">Reviews</a><a href="contact.html" class="block py-2">Contact</a>
-      <a href="contact.html" class="block bg-teal text-center py-2 rounded-lg font-semibold mt-2">Book Appointment</a>
-    </div>
-  </header>
+<header class="fixed top-3 inset-x-0 z-50 px-3">
+<div class="max-w-6xl mx-auto glass rounded-2xl shadow-lg px-5 flex items-center justify-between h-14">
+<a href="index.html" class="flex items-center gap-2"><img src="assets/logo.png" alt="Meditech" class="h-9 w-auto" onerror="this.style.display='none'"/><span class="font-display font-extrabold text-navy">Meditech<span class="text-teal">.</span></span></a>
+<nav class="hidden md:flex items-center gap-6 text-sm font-medium text-ink">
+<a href="index.html" class="navlink">Home</a><a href="about.html" class="navlink">About</a><a href="services.html" class="navlink">Services</a><a href="doctors.html" class="navlink">Doctors</a><a href="reviews.html" class="navlink text-teal">Reviews</a><a href="contact.html" class="navlink">Contact</a>
+<a href="contact.html" class="btn-glow bg-teal text-white px-4 py-2 rounded-xl font-semibold">Book Now</a>
+</nav>
+<button id="menuBtn" class="md:hidden text-navy"><i data-lucide="menu"></i></button>
+</div>
+<div id="mobileMenu" class="hidden md:hidden max-w-6xl mx-auto mt-2 glass rounded-2xl p-4 space-y-1 text-sm font-medium">
+<a href="index.html" class="block py-2">Home</a><a href="about.html" class="block py-2">About</a><a href="services.html" class="block py-2">Services</a><a href="doctors.html" class="block py-2">Doctors</a><a href="reviews.html" class="block py-2">Reviews</a><a href="contact.html" class="block py-2">Contact</a>
+<a href="contact.html" class="block bg-teal text-white text-center py-2 rounded-xl font-semibold">Book Now</a>
+</div>
+</header>
 
-  <section class="bg-navy text-white py-16"><div class="max-w-4xl mx-auto px-4 text-center">
-    <div class="text-star text-4xl">★★★★★</div>
-    <h1 class="text-4xl md:text-5xl font-bold mt-3">5.0 / 5.0</h1>
-    <p class="text-white/80 mt-2">Based on 287 Google Reviews</p>
-  </div></section>
+<section class="relative pt-36 pb-12 overflow-hidden">
+<div class="blob bg-mint" style="width:350px;height:350px;top:-60px;right:-40px"></div>
+<div class="max-w-4xl mx-auto px-5 text-center relative z-10 reveal">
+<div class="text-amber-400 text-4xl">★★★★★</div>
+<h1 class="text-6xl font-extrabold mt-2 grad-text">5.0</h1>
+<p class="text-muted mt-2 text-lg">Based on 287 Google Reviews</p>
+</div>
+</section>
 
-  <section class="py-16 bg-white"><div class="max-w-5xl mx-auto px-4">
-    <div class="bg-light border-l-4 border-teal rounded-xl p-8 text-center">
-      <p class="text-xl md:text-2xl font-display text-navy">"Dr. Ratnesh Sir is one of the best orthopaedic surgeons who learns the latest advanced methods of surgeries abroad."</p>
-      <p class="text-muted mt-3">— Mohit Kumar, Google Review</p>
-    </div>
+<section class="max-w-5xl mx-auto px-5 py-8">
+<div class="glass rounded-3xl p-10 text-center reveal">
+<i data-lucide="quote" class="w-10 h-10 text-teal mx-auto"></i>
+<p class="text-xl md:text-2xl font-display mt-4">"Dr. Ratnesh Sir is one of the best orthopaedic surgeons who learns the latest advanced methods of surgeries abroad."</p>
+<p class="text-muted mt-4">— Mohit Kumar, Google Review</p>
+</div>
 
-    <div class="grid md:grid-cols-2 gap-6 mt-10">
-      <div class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm"><div class="text-star">★★★★★</div><p class="mt-2 text-ink">"Dr. Ratnesh Sir is one of the best orthopaedic surgeons who learns the latest advanced methods of surgeries abroad."</p><div class="flex justify-between mt-3 text-sm"><span class="font-semibold text-navy">Mohit Kumar</span><span class="text-muted">Google</span></div></div>
-      <div class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm"><div class="text-star">★★★★★</div><p class="mt-2 text-ink">"Best orthopaedic hospital in Patna. Knee replacement for my grandmother treated with Ayushman card."</p><div class="flex justify-between mt-3 text-sm"><span class="font-semibold text-navy">Ishant Raj</span><span class="text-muted">Google</span></div></div>
-      <div class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm"><div class="text-star">★★★★★</div><p class="mt-2 text-ink">"I recently underwent knee replacement surgery at Meditech Hospital. My experience was very positive from the initial consultation."</p><div class="flex justify-between mt-3 text-sm"><span class="font-semibold text-navy">Gajendra Kumar</span><span class="text-muted">Google</span></div></div>
-      <div class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm"><div class="text-star">★★★★★</div><p class="mt-2 text-ink">"Excellent hospital and caring staff. Highly recommended for orthopaedic treatment in Patna."</p><div class="flex justify-between mt-3 text-sm"><span class="font-semibold text-navy">Sahil Barnawal</span><span class="text-muted">Google · last month</span></div></div>
-    </div>
+<div class="grid md:grid-cols-2 gap-6 mt-10">
+<div class="card reveal glass rounded-2xl p-7"><div class="text-amber-400">★★★★★</div><p class="mt-2">"Dr. Ratnesh Sir is one of the best orthopaedic surgeons who learns the latest advanced methods of surgeries abroad."</p><div class="flex justify-between mt-4 text-sm"><span class="font-semibold">Mohit Kumar</span><span class="text-muted">Google</span></div></div>
+<div class="card reveal glass rounded-2xl p-7"><div class="text-amber-400">★★★★★</div><p class="mt-2">"Best orthopaedic hospital in Patna. Knee replacement for my grandmother treated with Ayushman card."</p><div class="flex justify-between mt-4 text-sm"><span class="font-semibold">Ishant Raj</span><span class="text-muted">Google</span></div></div>
+<div class="card reveal glass rounded-2xl p-7"><div class="text-amber-400">★★★★★</div><p class="mt-2">"I recently underwent knee replacement surgery at Meditech Hospital. My experience was very positive from the initial consultation."</p><div class="flex justify-between mt-4 text-sm"><span class="font-semibold">Gajendra Kumar</span><span class="text-muted">Google</span></div></div>
+<div class="card reveal glass rounded-2xl p-7"><div class="text-amber-400">★★★★★</div><p class="mt-2">"Excellent hospital and caring staff. Highly recommended for orthopaedic treatment in Patna."</p><div class="flex justify-between mt-4 text-sm"><span class="font-semibold">Sahil Barnawal</span><span class="text-muted">Google · last month</span></div></div>
+</div>
 
-    <div class="text-center mt-10"><a href="https://maps.app.goo.gl/Ztuvkz7mox37qGKw6" target="_blank" class="bg-navy text-white px-6 py-3 rounded-lg font-semibold inline-flex items-center gap-2"><i data-lucide="star" class="w-5 h-5"></i>See All Reviews on Google</a></div>
-  </div></section>
+<div class="text-center mt-10 reveal"><a href="https://maps.app.goo.gl/Ztuvkz7mox37qGKw6" target="_blank" class="btn-glow bg-navy text-white px-7 py-3.5 rounded-xl font-semibold inline-flex items-center gap-2"><i data-lucide="star" class="w-5 h-5"></i>See All Reviews on Google</a></div>
+</section>
 
-  <footer class="bg-navy text-white py-10">
-    <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-3 gap-6 text-sm">
-      <div><h3 class="font-display text-lg font-bold">Meditech Hospital & Sports Injury Centre</h3><p class="text-white/70 mt-2">Dr. Ratnesh Singh (MS) | Dr. Priya Gupta</p></div>
-      <div class="text-white/80 space-y-1"><p>📍 7, Maurya Path, Jyotipuram Colony, Khajpura, Patna 800014</p><p>📞 <a href="tel:7479894869" class="hover:text-teal">7479894869</a></p><p>🕐 Open 24 Hours</p><p><a href="https://maps.app.goo.gl/Ztuvkz7mox37qGKw6" class="text-teal">View on Google Maps →</a></p></div>
-      <div class="text-white/70"><p><b class="text-white">Services:</b> Orthopaedics · Dental · Sports Injury · Spine · X-Ray</p></div>
-    </div>
-    <p class="text-center text-white/50 text-xs mt-8">© 2025 Meditech Hospital. All rights reserved.</p>
-  </footer>
+<footer class="bg-navy text-white pt-14 pb-8 mt-12">
+<div class="max-w-6xl mx-auto px-5 grid md:grid-cols-3 gap-8 text-sm">
+<div><h3 class="font-display text-lg font-extrabold">Meditech<span class="text-mint">.</span></h3><p class="text-white/70 mt-2">Meditech Hospital & Sports Injury Centre</p><p class="text-white/60 mt-1">Dr. Ratnesh Singh (MS) | Dr. Priya Gupta</p></div>
+<div class="text-white/80 space-y-1"><p>📍 7, Maurya Path, Jyotipuram Colony, Khajpura, Patna 800014</p><p>📞 <a href="tel:7479894869" class="hover:text-mint">7479894869</a></p><p>🕐 Open 24 Hours</p><p><a href="https://maps.app.goo.gl/Ztuvkz7mox37qGKw6" class="text-mint">View on Google Maps →</a></p></div>
+<div class="text-white/70"><p><b class="text-white">Services</b></p><p class="mt-1">Orthopaedics · Dental · Sports Injury · Spine · X-Ray</p></div>
+</div>
+<p class="text-center text-white/50 text-xs mt-10">© 2025 Meditech Hospital. All rights reserved.</p>
+</footer>
 
-  <a href="https://wa.me/917479894869" class="fixed bottom-5 right-5 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-lg"><i data-lucide="message-circle" class="w-6 h-6"></i></a>
-  <script>lucide.createIcons();document.getElementById('menuBtn').onclick=()=>document.getElementById('mobileMenu').classList.toggle('hidden');</script>
+<a href="https://wa.me/917479894869" class="fab fixed bottom-5 right-5 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-xl"><i data-lucide="message-circle" class="w-6 h-6"></i></a>
+<script>
+lucide.createIcons();
+document.getElementById('menuBtn').onclick=()=>document.getElementById('mobileMenu').classList.toggle('hidden');
+const io=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('show')}),{threshold:.15});
+document.querySelectorAll('.reveal').forEach((el,i)=>{el.style.transitionDelay=(i%2*.1)+'s';io.observe(el)});
+</script>
 </body>
 </html>
