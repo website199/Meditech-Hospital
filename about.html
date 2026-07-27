@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us | Meditech Hospital Patna | 30-Bed Orthopaedic & Dental Hospital</title>
+  <meta name="description" content="About Meditech Hospital & Sports Injury Centre, Patna. A 30-bed hospital with modular OT, in-house X-ray. Ayushman Bharat / PMJAY accepted." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>tailwind.config={theme:{extend:{colors:{navy:'#0B1F4B',teal:'#0D9488',light:'#F0F7F6',ink:'#1E293B',muted:'#64748B',star:'#F59E0B',emergency:'#DC2626'},fontFamily:{display:['"Playfair Display"','serif'],body:['Inter','sans-serif']}}}}</script>
+  <style>body{font-family:'Inter',sans-serif;color:#1E293B}h1,h2,h3,.display{font-family:'Playfair Display',serif}.label{letter-spacing:.08em}</style>
+</head>
+<body class="bg-white">
+
+  <header class="sticky top-0 z-50 bg-navy text-white shadow-lg">
+    <div class="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
+      <a href="index.html" class="flex items-center gap-2"><img src="assets/logo.png" alt="Meditech Hospital" class="h-10 w-auto" onerror="this.style.display='none'" /><span class="font-display text-lg font-bold">Meditech Hospital</span></a>
+      <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
+        <a href="index.html" class="hover:text-teal">Home</a><a href="about.html" class="text-teal">About</a><a href="services.html" class="hover:text-teal">Services</a><a href="doctors.html" class="hover:text-teal">Doctors</a><a href="reviews.html" class="hover:text-teal">Reviews</a><a href="contact.html" class="hover:text-teal">Contact</a>
+        <span class="bg-emergency text-xs px-3 py-1 rounded-full label font-semibold">Open 24 Hours</span>
+        <a href="contact.html" class="bg-teal px-4 py-2 rounded-lg font-semibold">Book Appointment</a>
+        <a href="tel:7479894869" class="flex items-center gap-1 border border-white/40 px-3 py-2 rounded-lg"><i data-lucide="phone" class="w-4 h-4"></i>Call</a>
+      </nav>
+      <button id="menuBtn" class="md:hidden"><i data-lucide="menu" class="w-7 h-7"></i></button>
+    </div>
+    <div id="mobileMenu" class="hidden md:hidden bg-navy border-t border-white/10 px-4 pb-4 space-y-2 text-sm">
+      <a href="index.html" class="block py-2">Home</a><a href="about.html" class="block py-2">About</a><a href="services.html" class="block py-2">Services</a><a href="doctors.html" class="block py-2">Doctors</a><a href="reviews.html" class="block py-2">Reviews</a><a href="contact.html" class="block py-2">Contact</a>
+      <a href="contact.html" class="block bg-teal text-center py-2 rounded-lg font-semibold mt-2">Book Appointment</a>
+    </div>
+  </header>
+
+  <section class="bg-navy text-white py-16"><div class="max-w-4xl mx-auto px-4 text-center">
+    <h1 class="text-4xl md:text-5xl font-bold">About Our Hospital</h1>
+    <p class="text-white/80 mt-3">Advanced orthopaedic & dental care in the heart of Patna</p>
+  </div></section>
+
+  <section class="py-16 bg-white"><div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
+    <img src="assets/hospital.jpg" alt="Meditech Hospital Building" class="rounded-xl shadow-lg w-full object-cover" onerror="this.outerHTML='<div class=\'rounded-xl bg-light h-64 flex items-center justify-center text-muted\'>Hospital Photo</div>'" />
+    <div>
+      <h2 class="text-3xl font-bold text-navy">Our Story</h2>
+      <p class="text-muted mt-4 text-lg">Meditech Hospital & Sports Injury Centre is a 30-bed hospital built to deliver advanced orthopaedic and dental care in Patna. Led by Dr. Ratnesh Singh (MS), a surgeon trained in the latest international techniques, we combine modern infrastructure with compassionate care.</p>
+      <div class="bg-light border-l-4 border-teal p-4 rounded mt-6">
+        <b class="text-navy">Our Mission</b>
+        <p class="text-muted mt-1">To provide accessible, world-class surgical care for every patient — regardless of background.</p>
+      </div>
+    </div>
+  </div></section>
+
+  <section class="py-16 bg-light"><div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-3xl font-bold text-navy text-center">Our Facilities</h2>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
+      <div class="bg-white border border-slate-200 rounded-xl p-6"><i data-lucide="scissors" class="w-9 h-9 text-teal"></i><h3 class="text-lg font-bold text-navy mt-3">Modular OT</h3><p class="text-muted mt-1">Sterile modular operation theater.</p></div>
+      <div class="bg-white border border-slate-200 rounded-xl p-6"><i data-lucide="scan" class="w-9 h-9 text-teal"></i><h3 class="text-lg font-bold text-navy mt-3">In-house X-Ray</h3><p class="text-muted mt-1">On-site radiology facility.</p></div>
+      <div class="bg-white border border-slate-200 rounded-xl p-6"><i data-lucide="accessibility" class="w-9 h-9 text-teal"></i><h3 class="text-lg font-bold text-navy mt-3">Wheelchair Access</h3><p class="text-muted mt-1">Accessible parking & entrance.</p></div>
+      <div class="bg-white border border-slate-200 rounded-xl p-6"><i data-lucide="stethoscope" class="w-9 h-9 text-teal"></i><h3 class="text-lg font-bold text-navy mt-3">OPD Services</h3><p class="text-muted mt-1">Daily outpatient consultation.</p></div>
+      <div class="bg-white border border-slate-200 rounded-xl p-6"><i data-lucide="activity" class="w-9 h-9 text-teal"></i><h3 class="text-lg font-bold text-navy mt-3">Physical Therapy</h3><p class="text-muted mt-1">Rehabilitation & recovery support.</p></div>
+      <div class="bg-white border border-slate-200 rounded-xl p-6"><i data-lucide="bed" class="w-9 h-9 text-teal"></i><h3 class="text-lg font-bold text-navy mt-3">30 Beds</h3><p class="text-muted mt-1">In-patient care capacity.</p></div>
+    </div>
+  </div></section>
+
+  <section class="py-16 bg-teal text-white"><div class="max-w-4xl mx-auto px-4 text-center">
+    <i data-lucide="badge-check" class="w-12 h-12 mx-auto"></i>
+    <h2 class="text-3xl font-bold mt-4">Ayushman Bharat Accepted</h2>
+    <p class="text-white/90 mt-3 text-lg">We accept Ayushman Bharat / PMJAY — quality treatment for all, regardless of financial background.</p>
+  </div></section>
+
+  <section class="py-16 bg-white"><div class="max-w-4xl mx-auto px-4 text-center">
+    <h2 class="text-3xl font-bold text-navy">Find Us in Patna</h2>
+    <p class="text-muted mt-3">📍 7, Maurya Path, Jyotipuram Colony, Khajpura, Patna, Bihar 800014</p>
+    <p class="text-muted">Located in Shyamal Hospital · Near Jyotipuram Colony</p>
+    <a href="contact.html" class="inline-block mt-6 bg-navy text-white px-6 py-3 rounded-lg font-semibold">Get Directions & Contact</a>
+  </div></section>
+
+  <footer class="bg-navy text-white py-10">
+    <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-3 gap-6 text-sm">
+      <div><h3 class="font-display text-lg font-bold">Meditech Hospital & Sports Injury Centre</h3><p class="text-white/70 mt-2">Dr. Ratnesh Singh (MS) | Dr. Priya Gupta</p></div>
+      <div class="text-white/80 space-y-1"><p>📍 7, Maurya Path, Jyotipuram Colony, Khajpura, Patna 800014</p><p>📞 <a href="tel:7479894869" class="hover:text-teal">7479894869</a></p><p>🕐 Open 24 Hours</p><p><a href="https://maps.app.goo.gl/Ztuvkz7mox37qGKw6" class="text-teal">View on Google Maps →</a></p></div>
+      <div class="text-white/70"><p><b class="text-white">Services:</b> Orthopaedics · Dental · Sports Injury · Spine · X-Ray</p></div>
+    </div>
+    <p class="text-center text-white/50 text-xs mt-8">© 2025 Meditech Hospital. All rights reserved.</p>
+  </footer>
+
+  <a href="https://wa.me/917479894869" class="fixed bottom-5 right-5 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-lg"><i data-lucide="message-circle" class="w-6 h-6"></i></a>
+  <script>lucide.createIcons();document.getElementById('menuBtn').onclick=()=>document.getElementById('mobileMenu').classList.toggle('hidden');</script>
+</body>
+</html>
